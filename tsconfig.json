@@ -16,5 +16,6 @@
     "noEmitOnError": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules", "android", "ios", "lib", "types"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "android", "ios", "lib", "types", "babel.config.js"]
 }
