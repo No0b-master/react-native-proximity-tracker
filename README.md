@@ -5,7 +5,7 @@ Provides a simple callback when a device is nearby and allows configuration for 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Detect nearby devices over **Bluetooth Low Energy (BLE)** (iOS + Android)  
 - Detect nearby devices over **Wi-Fi Direct** (Android only)  
@@ -15,19 +15,22 @@ Provides a simple callback when a device is nearby and allows configuration for 
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install react-native-proximity-tracker react-native-permissions
 # or
 yarn add react-native-proximity-tracker react-native-permissions
+
+```
+
 Linking (React Native <0.60)
-bash
-Copy code
+
+```bash
 react-native link react-native-permissions
 react-native link react-native-proximity-tracker
 ```
-## ⚡ Usage
+## Usage
 ```bash
 import ProximityTracker, { NearbyDevice } from 'react-native-proximity-tracker';
 
@@ -46,7 +49,7 @@ ProximityTracker.startScanning();
 // Stop scanning
 // ProximityTracker.stopScanning();
 ```
-## 📌 API
+## API
 
 configure(config: ProximityTrackerConfig)
 Configure threshold, scan interval, and low energy mode.
