@@ -11,9 +11,9 @@ export async function checkAndRequestPermissions(): Promise<boolean> {
   try {
     // iOS Permissions
     if (Platform.OS === 'ios') {
-      const bluetoothStatus = await check(PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL);
+      const bluetoothStatus = await check(PERMISSIONS.IOS.BLUETOOTH);
       if (bluetoothStatus !== RESULTS.GRANTED) {
-        const btRequest = await request(PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL);
+        const btRequest = await request(PERMISSIONS.IOS.BLUETOOTH);
         if (btRequest !== RESULTS.GRANTED) return false;
       }
 
